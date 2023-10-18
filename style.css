@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', sans-serif;
+    color: #ffffff;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.container{
+    position: relative;
+}
+
+.clock{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #ECF2FF;
+    border: 15px solid rgb(255, 32, 32);
+    box-shadow: 0px 0px 30px rgba(173, 111, 111, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock span{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i))); 
+    inset: 25px;
+    text-align: center;
+}
+
+.clock span b{
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 900;
+    color: #61677A;
+}
+
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: rgb(255, 32, 32);
+    z-index: 2;
+}
+
+.hand{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hand i{
+    position: absolute;
+    background-color: var(--clr);
+    width: 11px;
+    height: var(--h);
+    border-radius: 8px;
+}
+
+footer {
+    background-color: rgb(255, 32, 32);
+    color: #EEEEEE;
+    text-align: center;
+    padding: 1% 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100% ;
+    font-family: 'Tilt Neon', sans-serif;
+}
