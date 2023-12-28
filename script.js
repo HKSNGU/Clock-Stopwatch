@@ -1,4 +1,4 @@
-//clock
+//--------------------clock--------------------
 
 let hr = document.getElementById('hour');
 let min = document.getElementById('min');
@@ -23,7 +23,8 @@ function displayTime(){
 
 setInterval(displayTime, 1000);
 
-//stopwatch
+
+//--------------------stopwatch--------------------
 
 let timerDisplay = document.querySelector('.timerDisplay');
 let stopBtn = document.getElementById('stopBtn');
