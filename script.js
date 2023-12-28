@@ -59,8 +59,8 @@ resetBtn.addEventListener('click', function(){
     timerDisplay.innerHTML = `00:00:00`;
     msec = secs = mins = 0o0;
 
-    if(stopBtn.classList != "hide") stopBtn.classList.add("hide");
-    if(startBtn.classList == "hide") startBtn.classList.remove("hide");
+    if(stopBtn.classList != "icon-img hide") stopBtn.classList.add("hide");
+    if(startBtn.classList == "icon-img hide") startBtn.classList.remove("hide");
 });
 
 function startTimer(){
