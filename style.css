@@ -8,13 +8,13 @@
     color: #ffffff;
 }
 
-body{
+.content-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     background-color: #fff;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .display-container{
@@ -39,11 +39,12 @@ body{
 
 .icon{
     background-color: rgb(255, 32, 32);
+    box-shadow: 0px 0px 15px rgba(173, 111, 111, 0.9);
     border-radius: 50%;
     width: 50px;
     height: 50px;
     padding: 10px;
-    margin: 50px 15px;
+    margin: 50px 15px 0;
 }
 
 .icon-img{
@@ -52,13 +53,11 @@ body{
     cursor: pointer;
 }
 
-footer {
+.footer {
     background-color: rgb(255, 32, 32);
     color: #EEEEEE;
     text-align: center;
     padding: 1% 0;
-    position: fixed;
-    bottom: 0px;
     width: 100% ;
     font-family: 'Tilt Neon', sans-serif;
 }
